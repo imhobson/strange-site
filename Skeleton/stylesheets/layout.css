@@ -29,6 +29,11 @@ h4 { font-size: 24px; margin-bottom: 5px; }
 .largearrow { font-size: 60px; color: #d0d0d0; }
 .largearrow a {  text-decoration: none; }
 
+.darkbox {
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 20px;	
+}
+
 
 /* #Header
 ================================================== */
@@ -153,8 +158,6 @@ header nav li:last-child a { margin-right: 0px; }
 	font-weight: 600;
 	font-size: 15px; 
 	line-height: 23px; }
-
-
 
 
 
