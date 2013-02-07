@@ -105,7 +105,7 @@ header nav li.contact img {
 
 header nav a:visited { color: #fff; }
 header nav a.active { color: #2f2f2f; }
-header nav a:hover { color: #000000; }
+header nav a:hover { color: #8dc63f; }
 header nav li:first-child { background:none; }
 header nav li:first-child a { margin-left: 0px; }
 header nav li:last-child a { margin-right: 0px; }
@@ -200,15 +200,6 @@ header nav li:last-child a { margin-right: 0px; }
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 	.hidefull {display: none; }
-	.sponsors {
-	list-style: none;
-	width: 650px;
-	margin: auto;
-	margin-left: 150px;
-}
-
-
-		.prevsponsors { margin-left: 35px; }
 	.iphonelandscape { display: none; }
 	}
 
@@ -235,10 +226,6 @@ header nav li:last-child a { margin-right: 0px; }
 	header #nav_right { display: none; }
 	.nomobile { display: none; }
 	.iphonelandscape { display: none; }
-	.headate { margin-bottom: 10px; }
-	.bookbutton { margin-bottom: 45px; }
-	.sponsors { margin-left: 25px; }
-	.prevsponsors { margin-left: 70px; }
 	header #logo { margin:0 auto; position:relative; margin-top: 0px; z-index:999; }
 	}
 
