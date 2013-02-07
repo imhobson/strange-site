@@ -48,28 +48,74 @@ h4 { font-size: 24px; margin-bottom: 5px; }
 ================================================== */
 
 
-header { width:100%; height:396px; background:url(../images/headerbg.jpg) repeat-x top center; }
+header { 
+	width: 100%; 
+	height: 396px; 
+	background: url(../images/headerbg.jpg) repeat-x top center; 
+}
 	
-	header #logo { margin:0 auto; position:relative; margin-top: 300px; z-index:999; }
-	img.center { display: block; margin-left: auto; margin-right: auto; }
-	
-	#tweetbtn { float: left; margin-top: 20px; width: 100px; }
-	#fblike { float: left; margin-top: 20px; }
-	#plusone { float: left; margin-left: 5px; margin-top: 20px; }
+header #logo { 
+	margin: 0 auto; 
+	position: relative; 
+	margin-top: 300px; 
+	z-index: 999; 
+}
 
-	
-	header nav { font-family: 'Amatic SC', serif; font-size: 40px; margin-top:80px; }
-	header nav li { display:block; float:left; }
-	header nav a { color:#fff; text-decoration:none; display: block; padding: 17px; margin-left: 5px; margin-right: 5px; background: rgba(0, 0, 0, 0.6); }
-	header nav a:visited { color: #fff; }
-	header nav a.active { color: #2f2f2f; }
-	header nav a:hover { color: #000000; }
-	header nav li:first-child { background:none; }
-	header nav li:first-child a { margin-left: 0px; }
-	header nav li:last-child a { margin-right: 0px; }
-	header #nav_left { float:left; margin-top: -170px; }
-	header #nav_right { float:right; margin-top: -170px; }
+img.center { 
+	display: block; 
+	margin-left: auto; margin-right: auto; 
+}
 
+header nav { 
+	font-family: 'Amatic SC', serif; 
+	font-size: 40px; 
+	margin-top: 80px; 
+}
+
+header #nav_left { 
+	position: relative;
+	top:-255px;
+	float:left; 
+}
+header #nav_right { 
+	position: relative;
+	top:-255px;
+	float:right; 
+}
+
+header nav li { 
+	display:block; 
+	float:left; 
+}
+
+header nav a { 
+	color:#fff; 
+	text-decoration:none; 
+	display: block;
+	height: 50px; 
+	line-height:50px;
+	padding: 5px 17px 5px 17px;
+	margin: 0px 5px 0px 5px; 
+	background: rgba(0, 0, 0, 0.6); 
+	-webkit-transition: color 200ms ease-in;
+  -moz-transition: color 200ms ease-in;
+  -o-transition: color 200ms ease-in;
+  -ms-transition: color 200ms ease-in;
+  transition: color 200ms ease-in;
+}
+
+/* Fix position of contact icon */
+header nav li.contact img {
+	position:relative;
+	top:-5px;
+}
+
+header nav a:visited { color: #fff; }
+header nav a.active { color: #2f2f2f; }
+header nav a:hover { color: #000000; }
+header nav li:first-child { background:none; }
+header nav li:first-child a { margin-left: 0px; }
+header nav li:last-child a { margin-right: 0px; }
 
 .mininav { font-family: 'Quando', serif, "Georgia", "Times New Roman", Arial, sans-serif; font-size: 15px; list-style-type:none; margin:0; padding:0; margin-top: 20px; }
 .mininav li { background: #c99763; width: 49%; float: left; margin-right: 2%; text-align: center; margin-bottom: 5px; }
@@ -97,6 +143,11 @@ header { width:100%; height:396px; background:url(../images/headerbg.jpg) repeat
 
 #social { margin-left: auto; margin-right: auto; text-align: center; }
 .social li { display: inline; float: left; margin-left: 10px; }
+
+	
+#tweetbtn { float: left; margin-top: 20px; width: 100px; }
+#fblike { float: left; margin-top: 20px; }
+#plusone { float: left; margin-left: 5px; margin-top: 20px; }
 
 	
 
