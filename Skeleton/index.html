@@ -68,19 +68,17 @@
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<header>
+	<header id="header">
 	<div class="container">
-		<div class="six columns offset-by-five">
-			<div id="logo">
-				<a href="index.html" title="Strange Home" alt="Home">
-					<img src="images/logo.png" class="scale-with-grid center" alt="Strange logo">
-				</a>
-			</div>
-		</div>
+	<div id="logo">
+		<a href="index.html" title="Strange Home" alt="Home">
+		<img src="images/logo.png" class="scale-with-grid center" alt="Strange logo"></a>
+	</div>
+	
 		<div class="eight columns">
 			<nav id="nav_left">
 			<ul>
-				<li><a href="index.html" class="active" alt="Home"><img src="images/nav-home.png" alt="Home"></a></li>
+				<li class="home"><a href="index.html" class="active" alt="Home"><img src="images/nav-home.png" alt="Home"></a></li>
 				<li><a href="aboutus.html" alt="About Us">About Us</a></li>
 				<li><a href="theteam.html" alt="The Team">The Team</a></li>
 			</ul>
@@ -100,10 +98,8 @@
 	</header>
 	<!-- END HEADER -->
 
-
-
 	<!-- BEGIN BODY -->
-	<div class="container">
+	<div id="page-container" class="container">
 	
 	<!-- BEGIN MOBILE NAV -->
 	<div class="hidefull">
@@ -182,7 +178,7 @@
 
 	<!-- JS
 	================================================== -->
-	
+	<script src="javascripts/header.js" type="text/javascript"></script>
 	<script src="javascripts/jquery.tweet.js" type="text/javascript"></script>
 	<script type='text/javascript'>
     jQuery(function($){
