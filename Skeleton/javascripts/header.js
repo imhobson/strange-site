@@ -19,31 +19,31 @@
 		newScrollTop = $(this).scrollTop()
 	
     // Fix the header and adjust the top margin for
-    // the page as we are removing the header from 
-    // the flow
+    // the page when removing header from flow
 		if(newScrollTop > 280){
-			$page.css({"margin-top":"476px"});
+			$page.addClass("fixed-header");
 			$header.addClass("fixed");
     }else{
-    	$page.css({"margin-top":"0px"});
+    	$page.removeClass("fixed-header");
     	$header.removeClass("fixed");
     }
     
-    // Parallax effect of the middle and back 
-    // header backgrounds
-    d = newScrollTop - scrollTop;
+    // Parallax effect for the middle and back 
+    // header backgrounds & godzilla
+    
+    delta = newScrollTop - scrollTop;
     scrollTop = newScrollTop;
-    backBgPos = backBgPos + d*backSpeed;
-    middleBgPos = middleBgPos + d*middleSpeed;
-    godzillaPos = godzillaPos + d*godzillaSpeed;
+    backBgPos = backBgPos + delta*backSpeed;
+    middleBgPos = middleBgPos + delta*middleSpeed;
+    godzillaPos = godzillaPos + delta*godzillaSpeed;
     $backBg.css({
-    		"background-position": "0px " + backBgPos + "px"
+    		"background-position": "0px "+backBgPos+"px"
     });
     $middleBg.css({
-    		"background-position": "center " + middleBgPos + "px"
+    		"background-position": "center "+middleBgPos+"px"
     });
     $godzilla.css({
-    		"background-position": "0px " + godzillaPos + "px"
+    		"background-position": "0px "+godzillaPos+"px"
     });
   });
  });

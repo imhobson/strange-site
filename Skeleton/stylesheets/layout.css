@@ -66,7 +66,7 @@ header {
 	width:280px;
 	height:276px;
 	top:20px;
-	left:200px;
+	left:20%;
 	background: url(../images/kaiju.png) no-repeat;
 }
 	
@@ -129,44 +129,85 @@ header nav li:first-child { background:none; }
 header nav li:first-child a { margin-left: 0px; }
 header nav li:last-child a { margin-right: 0px; }
 
-/* Fixed header */
-header.fixed{
-	position:fixed;
-	top: -320px;
+
+/* Fixed header only for larger screens */
+@media only screen and (min-width: 767px) {
+
+	header.fixed{
+		position:fixed;
+		top: -320px;
+	}
+
+	header.fixed #logo { 
+		top:197px;
+	}
+
+	header.fixed #logo img{ 
+		height:125px; 
+	}
+
+	header.fixed nav{
+		top:72px;
+	}
+
+	header.fixed nav a{
+		height: 40px; 
+		font-size: 30px;
+		line-height:40px;
+	}
+
+	header.fixed #nav_left { 
+		left:80px; 
+	}
+
+	header.fixed #nav_right { 
+		right:80px; 
+	}
+
+	header.fixed nav li.contact img {
+		top:0px;
+	}
+
+	header.fixed nav li.home img {
+		position:relative;
+		top:2px;
+	}
 }
 
-header.fixed #logo { 
-	top:197px;
-}
+/* Make the nav smaller for screens smaller than 960px */
+@media only screen and (max-width: 959px) {
+	
+	header #logo img{ 
+		height:125px; 
+	}
 
-header.fixed #logo img{ 
-	height:125px; 
-}
+	header nav{
+		top:51px;
+	}
 
-header.fixed nav{
-	top:72px;
-}
+	header nav a{
+		height: 40px; 
+		font-size: 30px;
+		line-height:40px;
+	}
 
-header.fixed nav a{
-	height: 40px; 
-	font-size: 30px;
-	line-height:40px;
-}
+	header.fixed #nav_left { 
+		left:0px; 
+	}
 
-header.fixed #nav_left { 
-	left:80px; 
-}
-header.fixed #nav_right { 
-	right:80px; 
-}
+	header.fixed #nav_right { 
+		right:0px; 
+	}
 
-header.fixed nav li.contact img {
-	top:0px;
-}
 
-header.fixed nav li.home img {
-	position:relative;
-	top:2px;
+	header nav li.contact img {
+		top:0px;
+	}
+
+	header nav li.home img {
+		position:relative;
+		top:2px;
+	}
 }
 
 /* Mobile nav */
@@ -198,6 +239,15 @@ header.fixed nav li.home img {
 #fblike { float: left; margin-top: 20px; }
 #plusone { float: left; margin-left: 5px; margin-top: 20px; }
 
+/* #Page
+================================================== */
+
+@media only screen and (min-width: 767px) {
+	#page-container.fixed-header{
+		margin-top:476px;
+	}
+}
+
 /* #Home Page
 ================================================== */
 
@@ -228,65 +278,55 @@ header.fixed nav li.home img {
 
 /* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (min-width: 959px) {
-	.hidefull {display: none; }
+	.hidefull { display: none; }
 	.iphonelandscape { display: none; }
 	.sponsors {
-	list-style: none;
-	margin: auto;
+		list-style: none;
+		margin: auto;
+	}
 }
-	}
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	.slidertop { 
+		margin-top: -21px; 
+	}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
 	
-	header nav { font-size: 13px; margin-top:0px; }
-	header nav a { color:#fff; padding-bottom: 15px; display: block; margin-left: 15px; margin-right: 15px; }
-	header #nav_left { float:left; margin-top: 20px; }
-	header #nav_right { float:right; margin-top: 20px; }
-	.slidertop { margin-top: -21px; }
-	}
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
-	.hidefull {display: none; }
-
+	.hidefull { display: none; }
 	.sponsors {
-	list-style: none;
-	width: 650px;
-	margin: auto;
-	margin-left: 150px;
-}
-
-	 .prevsponsors { margin-left: 35px; }
-
-	.iphonelandscape { display: none; }
+		list-style: none;
+		width: 650px;
+		margin: auto;
+		margin-left: 150px;
 	}
 
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	.prevsponsors { 
+		margin-left: 35px; 
+	}
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-	
-	header #nav_left { display: none; }
-	header #nav_right { display: none; }
+	.iphonelandscape { 
+		display: none; 
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 	.nomobile { display: none; }
-	header #logo { margin:0 auto; position:relative; margin-top: 0px; z-index:999; }
-	}
+}
 	
-	@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) {
 	.iphoneportrait { display: none; }
-	}
+}
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-	
-	header #nav_left { display: none; }
-	header #nav_right { display: none; }
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
 	.nomobile { display: none; }
 	.iphonelandscape { display: none; }
-	header #logo { margin:0 auto; position:relative; margin-top: 0px; z-index:999; }
-	}
+}
 
 /* #Font-Face
 ================================================== */
