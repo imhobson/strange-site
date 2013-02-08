@@ -96,7 +96,7 @@ header nav li.contact img {
 }
 
 header nav a:visited { color: #fff; }
-header nav a.active { color: #2f2f2f; }
+header nav a.active { color: #a8e555; background: rgba(50, 50, 50, 0.6); }
 header nav a:hover { color: #8dc63f; }
 header nav li:first-child { background:none; }
 header nav li:first-child a { margin-left: 0px; }
