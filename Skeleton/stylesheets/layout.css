@@ -60,6 +60,15 @@ header {
 	height: 266px;
 	background: url(../images/city-back.png) repeat-x 0px 0px; 
 }
+
+#header-godzilla{
+	position:absolute;
+	width:280px;
+	height:276px;
+	top:20px;
+	left:200px;
+	background: url(../images/kaiju.png) no-repeat;
+}
 	
 header #logo { 
 	margin: 0;
