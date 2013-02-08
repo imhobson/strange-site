@@ -224,20 +224,77 @@ header nav li:last-child a { margin-right: 0px; }
 /* #Footer
 ================================================== */
 
-.footer  {
-		font: 15px/28px;
-		margin-top:20px;
-		padding-top: 15px;
-		}
+.footer {
+	position:relative;
+	bottom:0px;
+	font: 15px/28px;
+	margin-top:20px;
+	padding-top: 15px;
+	text-align: center;
+}
 
-.eggs { margin-bottom: -10px; }		
+.footer .eggs { 
+	z-index:2;
+	position:absolute;
+	width:200px;
+	left:50%;
+	margin-left:-100px;
+	top:30px;
+}	
 
-#social { margin-left: auto; margin-right: auto; text-align: center; }
-.social li { display: inline; float: left; margin-left: 10px; }
+.footer .mound{
+	z-index:1;
+	position:relative;
+	left:0px;
+	width:100%;
+	bottom:-10px;
+}
 
-#tweetbtn { float: left; margin-top: 20px; width: 100px; }
-#fblike { float: left; margin-top: 20px; }
-#plusone { float: left; margin-left: 5px; margin-top: 20px; }
+.footer .social{
+	z-index:2;
+	width:240px;
+	text-align:center;
+	position: absolute;
+	left:50%;
+	margin-left:-120px;
+	top:150px;
+}
+
+#tweetbtn { 
+	float:left;
+	width:100px;
+}
+
+#fblike { 
+	float: right;
+}
+
+@media only screen and (max-width: 960px) {
+	.footer .eggs { 
+		width:160px;
+		margin-left:-80px;
+		top:25px;
+	}
+	.footer .social{
+		top:120px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.footer .eggs { 
+		width:100px;
+		margin-left:-50px;
+		top:20px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.footer .eggs { 
+		width:70px;
+		margin-left:-35px;
+		top:10px;
+	}
+}
 
 /* #Page
 ================================================== */
