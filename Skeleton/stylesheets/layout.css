@@ -32,6 +32,13 @@ h4 { font-size: 24px; margin-bottom: 5px; }
 	padding: 20px;	
 }
 
+.greenbox {
+	background-color: rgba(117, 202, 82, 0.5);
+	padding: 20px;	
+}
+
+.tpic { padding-bottom: 7px; }
+
 /* #Header
 ================================================== */
 
@@ -122,8 +129,8 @@ header nav li.contact img {
 	top:-5px;
 }
 
-header nav a:visited { color: #fff; }
-header nav a.active { color: #2f2f2f; }
+header nav a:visited { color: #e8e8e8; }
+header nav a.active { color: #8dc63f; }
 header nav a:hover { color: #8dc63f; }
 header nav li:first-child { background:none; }
 header nav li:first-child a { margin-left: 0px; }
@@ -319,6 +326,10 @@ header nav li:last-child a { margin-right: 0px; }
 	font-weight: 600;
 	font-size: 15px; 
 	line-height: 23px; }
+	
+.blogheading { background-color: #FFFFFF; padding: 6px 5px 2px 10px; margin-bottom: 30px; }
+
+.blogheading h2 { font-size: 40px; text-align: left; line-height: 45px; color: #2d2d2d; }
 
 /* #Contact Page
 ================================================== */
