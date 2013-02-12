@@ -37,8 +37,6 @@ h4 { font-size: 24px; margin-bottom: 5px; }
 	padding: 20px;	
 }
 
-
-
 .tpic { padding-bottom: 7px; text-align: center; }
 
 /* #Header
@@ -85,7 +83,6 @@ header #logo {
 	top: 176px;
 	width:280px;
 }
-
 
 img.center { 
 	display: block; 
@@ -319,7 +316,12 @@ header nav li:last-child a { margin-right: 0px; }
 /* #Home Page
 ================================================== */
 
-.homeheading { margin-top: 20px; font-size: 49px; text-align: center; line-height: 45px; color: #FFFFFF; }
+.homeheading { 
+	margin-top: 20px; font-size: 49px; 
+	text-align: center; 
+	line-height: 45px; 
+	color: #f4e1c2; 
+}
 
 .homepic { padding-top: 5px;
 			padding-bottom: 10px; }
