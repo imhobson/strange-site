@@ -237,7 +237,7 @@ header nav li:last-child a { margin-right: 0px; }
 	position:relative;
 	bottom:0px;
 	font: 15px/28px;
-	margin-top:20px;
+	margin-top:40px;
 	padding-top: 15px;
 	text-align: center;
 }
@@ -280,9 +280,7 @@ header nav li:last-child a { margin-right: 0px; }
 
 @media only screen and (max-width: 960px) {
 	.footer .eggs { 
-		width:160px;
-		margin-left:-80px;
-		top:25px;
+		top:0px;
 	}
 	.footer .social{
 		top:120px;
@@ -290,18 +288,20 @@ header nav li:last-child a { margin-right: 0px; }
 }
 
 @media only screen and (max-width: 767px) {
+	.footer{
+		padding-top:55px;
+	}
 	.footer .eggs { 
-		width:100px;
-		margin-left:-50px;
-		top:20px;
+		top:0px;
 	}
 }
 
 @media only screen and (max-width: 480px) {
+	.footer{
+		padding-top:75px;
+	}
 	.footer .eggs { 
-		width:70px;
-		margin-left:-35px;
-		top:10px;
+		top:0px;
 	}
 }
 
