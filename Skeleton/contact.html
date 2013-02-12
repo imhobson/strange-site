@@ -8,10 +8,11 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>3beards Contact - Growing the tech community</title>
-	<meta name="keywords" content="London, networking, event, 3beards digital, sizzle, digital sizzle, tech, tech city, startup, silicon drinkabout, silicon roundabout, mind candy, Michael Hobson, Bryce Keane, Benjamin Southworth, TremulantDesign, Tremulant Design, Bryce_Keane, inthecompanyof, Parker Crockford, Joe Scarboro" />
-	<meta name="description" content="Growing the tech community" />
+	<title>Strange - Inusitus Bonum Est</title>
+	<meta name="keywords" content="London, Strange, Agency, 3D Printing, App design, app build, website design, website developer, Pollarize, Wayra, Michael Hobson, Mat Munro, Philip Cole, Juan Uys, 3beards, tech, tech city, startup, silicon roundabout" />
+	<meta name="description" content="Inusitus est bonum" />
     <meta name="author" content="Michael Hobson">
+    <meta property="og:image" content="http://www.meetstrange.com/images/og.png" />
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -19,11 +20,11 @@
 
 	<!-- CSS
   ================================================== -->
-  	
-  	<link href='http://fonts.googleapis.com/css?family=Quando|Petit+Formal+Script|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Amatic+SC|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel='stylesheet' href="stylesheets/unoslider.css" type='text/css' />
 	<link rel="stylesheet" href="stylesheets/jquery.tweet.css" type="text/css" media="all" />
 
 
@@ -50,6 +51,8 @@
 	</script>
 
 </head>
+
+
 <body>
 
 <div id="fb-root"></div>
@@ -64,109 +67,68 @@
 
 	<!-- Primary Page Layout
 	================================================== -->
-	<div class="furley">
-	<header>
-	<div class="container">
-		<div class="eight columns">
-			<div id="tweetbtn" class="nomobile">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.3-beards.com" data-text="The @3_beards are growing the London tech community" data-related="3_beards">Tweet</a>
-			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-			</div>
-		
-			<div id="fblike" class="nomobile">
-			<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="https://www.facebook.com/3beards" send="false" layout="button_count" width="80" show_faces="false"></fb:like>
-			</div>
-		
-			<div id="plusone" class="nomobile">
-			<g:plusone size="medium" annotation="inline" width="100" href="http://www.3-beards.com"></g:plusone>
-			</div>
-		</div>
-		
-		<div class="eight columns">
-		<a href="mailto:hello@3-beards.com?subject=3beards%20-%20Enquiry" rel="external" title="Email Us" class="nomobile"><h5 class="heademail">hello@3-beards.com</h5></a>
-		</div>
-		
-		<div class="sixteen columns">
-		<a href="mailto:hello@3-beards.com?subject=3beards%20-%20Enquiry" rel="external" title="Email Us" class="hidefull nounder"><h5 class="heademailmob">hello@3-beards.com</h5></a>
-		</div>
 
-		
-		<div class="sixteen columns">
-		</div>
+	<div id="header-back-bg"></div>
+  <div id="header-middle-bg"></div>
+  <div id="header-godzilla"></div>
+	<header id="header">
+	<div class="container">
+	<div id="logo">
+		<a href="index.html" title="Strange Home" alt="Home">
+		<img src="images/logo.png" class="scale-with-grid center" alt="Strange logo"></a>
+	</div>
 	
-		<div class="six columns">
-			<nav id="nav_left">
+		<div class="eight columns">
+			<nav id="nav_left" class="nomobile">
 			<ul>
-				<li><a href="index.html" alt="Home">Home</a></li>
-				<li><a href="about.html" alt="About">About</a></li>
-				<li><a href="events.html" alt="Events">Events</a></li>
-				<li><a href="press.html" alt="Press">Press</a></li>
+				<li class="home"><a href="index.html" alt="Home"><img src="images/nav-home.png" alt="Home"></a></li>
+				<li><a href="aboutus.html" alt="About Us">About Us</a></li>
+				<li><a href="theteam.html" alt="The Team">The Team</a></li>
 			</ul>
 			</nav>
 		</div>
-		
-		<div class="four columns">
-			<div id="logo">
-				<a href="index.html" title="3beards home" alt="Home"><img src="images/logo.png" class="scale-with-grid center" alt="3beards logo"></a>
-			</div>
-		</div>
-		
-		<div class="six columns">		
-			
-			<nav id="nav_right">
+						
+		<div class="eight columns">		
+			<nav id="nav_right" class="nomobile">
 				<ul>
-					<li><a href="partners.html" alt="Partners">Partners</a></li>				
-					<li><a href="jobs/index.html" alt="Jobs">Jobs</a></li>				
-					<li><a href="blog/index.html" alt="Blog">Blog</a></li>
-					<li><a href="contact.html" class="active" alt="Contact">Contact</a></li>
+					<li><a href="/blog" alt="Our Work">Our Work</a></li>				
+					<li><a href="/blog" alt="Blog">The Blog</a></li>
+					<li class="contact"><a href="contact.html" class="active" alt="Contact"><img src="images/nav-mail.png" alt="Contact"></a></li>
 				</ul>
 			</nav>
-			
-		</div>
-		
-		
-				
+		</div>	
 	</div>
-	</header>
-	
+  </header>
+  
 	<!-- END HEADER -->
 
-
-	<div class="container">
+	<!-- BEGIN BODY -->
+	<div id="page-container" class="container">
+	
+	<!-- BEGIN MOBILE NAV -->
 	<div class="hidefull">
 	<div class="sixteen columns add-bottom">
 		
 				<ul class="mininav">
 					<li><a href="index.html" alt="Home">Home</a></li>
-					<li class="fixnav"><a href="about.html" alt="About">About</a></li>
-					<li><a href="events.html" alt="Events">Events</a></li>
-					<li class="fixnav"><a href="press.html" alt="Press">Press</a></li>
-					<li><a href="partners.html" alt="Partners">Partners</a></li>				
-					<li class="fixnav"><a href="jobs/index.html" alt="Jobs">Jobs</a></li>
-					<li><a href="blog/index.html" alt="Blog">Blog</a></li>			
-					<li class="fixnav"><a href="contact.html" class="active" alt="Contact">Contact</a></li>				
+					<li class="fixnav"><a href="aboutus.html" alt="About Us">About Us</a></li>
+					<li><a href="theteam.html" alt="The Team">The Team</a></li>
+					<li class="fixnav"><a href="/blog" alt="Our Work">Our Work</a></li>
+					<li><a href="/blog" alt="The Blog">The Blog</a></li>				
+					<li class="fixnav"><a href="contact.html" class="active" alt="Contact">Contact</a></li>
 				</ul>
 		
-		</div></div>
-	 
-	 	
-
+	</div>
+	</div>
+	<!-- END MOBILE NAV -->
 
 		<div class="sixteen columns">
-			<h1 class="homeheading big-bottom"><strong>Get in touch</strong></h1>
+			<h1 class="homeheading add-bottom"><strong>Contact</strong></h1>
+			<p class="middle big-bottom"><strong>You can get us on <a href="mailto:hi@meetstrange.com">hi@meetstrange.com</a> or fill out the form below</strong></p>
 		</div>
 		
-		<!-- ############################################################## -->
-		<div class="sixteen columns">&nbsp;</div>		
-		<div class="seven columns"><hr /></div>
-		<div class="two columns"><p><span class="largearrow middle">&#9993;</span></p></div>
-		<div class="seven columns"><hr /></div>
-		<div class="sixteen columns add-bottom">&nbsp;</div>
-		<!-- ############################################################## -->
 		
-		<div class="eight columns">
-			
-			<label for="form1">Send us a message</label>
+		<div class="six columns offset-by-five">
 			
 			<div id="form-div">
         	<form class="form" id="form1" method="post" action="contactengine.php">
@@ -196,18 +158,7 @@
 			
 		</div>
 		
-		<div class="eight columns">
-		
-		<!-- Begin MailChimp Signup Form -->
-		<div id="mc_embed_signup">
-		<form action="http://thedigitalsizzle.us4.list-manage1.com/subscribe/post?u=a03f4a6f3d63ccbcf069a168e&amp;id=c0cd1176fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-		<label for="mce-EMAIL">Subscribe to The Stache - our weekly update</label>
-		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-		</form>
-		</div>
-		<!--End mc_embed_signup-->
-		
+		<!--<div class="eight columns">
 		
 		<p>We'd love to hear from you! Get in touch if you'd like to ask us something, give us feedback, or enquire about becoming a sponsor or partner.</p>
 		
@@ -224,81 +175,71 @@
 			</ul>
 
 	
-			</div>		
-		
-				
-		
+			</div>-->        
+                       
+        
+        
 
-
-	</div><!-- end container -->	
+	</div><!-- end container div -->
+	<!-- END BODY -->	
 	
-<div class="footer">
-		<div class="container">
+	
+	<!-- BEGIN FOOTER -->
+	<div class="container footer">
 		
-			<div class="sixteen columns">
-			
-			
-			
+		<div class="social">
+			<div id="tweetbtn" class="nomobile">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.meetstrange.com" data-text="Inusitus Bonum Est" data-related="meetstrange">Tweet</a>
 			</div>
-			
-			<div class="twelve columns offset-by-two">
-			<div id="box">
-				<div class="tweet"></div>
-				<div class="half-top followbutton center"><a href="https://twitter.com/3_beards" class="twitter-follow-button" data-show-count="false">Follow @3_beards</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+			<div id="fblike" class="nomobile">
+				<fb:like href="https://www.facebook.com/meetstrange" send="false" layout="button_count" width="80" show_faces="false"></fb:like>
 			</div>
-			</div>
-			
-			<!--<div class="four columns offset-by-six">
-					<div>
-					<ul class="social">
-						<li><a href="http://www.twitter.com/3_beards" target="_blank" rel="external" title="Twitter"><img src="images/ico-twitter.png" width="37" height="28" alt="Twitter" /></a></li>
-						<li><a href="http://www.facebook.com/3beards" target="_blank" rel="external" title="Facebook"><img src="images/ico-facebook.png" width="37" height="28" alt="Facebook" /></a></li>
-						<li><a href="mailto:hello@3-beards.com?subject=3beards%20-%20Enquiry" rel="external" title="Email Us"><img src="images/ico-email.png" width="37" height="28" alt="Email" /></a></li>
-					</ul>
-					</div>
-			</div>-->
-			
 		</div>
-	</div>
 
-</div><!-- end furley BG -->
+		<img class="eggs" src="images/footer-eggs.png" alt="Eggs"/>	
+		<img class="mound" src="images/footer-ground.png" alt="Mound" class="scale-with-grid"/>	
+
+	</div>
+	<!-- END FOOTER -->
 
 
 	<!-- JS
 	================================================== -->
-	<script src="javascripts/tabs.js"></script>
-	
-<script type='text/javascript'>
-	$(document).ready(function(){
- 
-	$("img.a").hover(
-	function() {
-	$(this).stop().animate({"opacity": "0"}, "slow");
-	},
-	function() {
-	$(this).stop().animate({"opacity": "1"}, "slow");
-	});
- 
-	});
-	</script>
-
-<script src="javascripts/jquery.tweet.js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+	<script src="javascripts/header.js" type="text/javascript" /></script>
+	<script src="javascripts/jquery.tweet.js" type="text/javascript"></script>
 	<script type='text/javascript'>
     jQuery(function($){
         $(".tweet").tweet({
-            username: "3_beards",
+            username: "meetstrange",
             count: 1,
             loading_text: "loading tweets…"
         }).bind("loaded",function(){$(this).find("a").attr("target","_blank");});
     });
 	</script>
+	
+	<script src='javascripts/unoslider.min.js' type='text/javascript'></script>
+    <script type='text/javascript'> 
+  $(document).ready(function(){ 
+    $('#slider').unoslider({
+    navigation: false,
+    indicator: false,
+    slideshow: {
+    speed: 4
+    },
+    width: 920,
+    height: 288,
+    scale: true,
+    responsive: true}
+    ); 
+  }); 
+  	</script> 	
 		
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36567651-1']);
-  _gaq.push(['_setDomainName', '3-beards.com']);
+  _gaq.push(['_setAccount', 'UA-37834457-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -307,8 +248,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
-	
+</script>	
 
 
 <!-- End Document
