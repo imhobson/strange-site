@@ -37,7 +37,9 @@ h4 { font-size: 24px; margin-bottom: 5px; }
 	padding: 20px;	
 }
 
-.tpic { padding-bottom: 7px; }
+
+
+.tpic { padding-bottom: 7px; text-align: center; }
 
 /* #Header
 ================================================== */
@@ -332,6 +334,35 @@ header nav li:last-child a { margin-right: 0px; }
 .blogheading { background-color: #FFFFFF; padding: 6px 5px 2px 10px; margin-bottom: 30px; }
 
 .blogheading h2 { font-size: 40px; text-align: left; line-height: 45px; color: #2d2d2d; }
+
+/* #Team Page
+================================================== */
+
+.social-buttons{
+	margin:5px 0px 0px;
+	padding:0px;
+	text-align:center;
+}
+
+.social-buttons li{
+	display:inline;
+	font-size:24px;
+	padding-left:5px;
+}
+
+.social-buttons li.first{
+	padding-left:0px;
+}
+
+.social-buttons a{
+	text-decoration: none;
+	color:white;
+}
+.social-buttons a:hover{color:white; opacity:.8;};
+.social-buttons a:active{color:white; opacity:.8;};
+.social-buttons a:visited{color:white;};
+
+
 
 /* #Contact Page
 ================================================== */
