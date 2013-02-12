@@ -104,7 +104,23 @@
 
 	<!-- BEGIN BODY -->
 	<div id="page-container" class="container">
-
+	
+	<!-- BEGIN MOBILE NAV -->
+	<div class="hidefull">
+	<div class="sixteen columns add-bottom">
+		
+				<ul class="mininav">
+					<li><a href="index.html" alt="Home">Home</a></li>
+					<li class="fixnav"><a href="aboutus.html" alt="About Us">About Us</a></li>
+					<li><a href="theteam.html" alt="The Team">The Team</a></li>
+					<li class="fixnav"><a href="/blog" alt="Our Work">Our Work</a></li>
+					<li><a href="/blog" class="active"  alt="The Blog">The Blog</a></li>				
+					<li class="fixnav"><a href="contact.html" alt="Contact">Contact</a></li>
+				</ul>
+		
+	</div>
+	</div>
+	<!-- END MOBILE NAV -->
 
 
 

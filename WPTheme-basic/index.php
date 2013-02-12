@@ -16,7 +16,13 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
+	<div class="sixteen columns">
+			<h1 class="homeheading big-bottom"><strong>The Blog</strong></h1>
+	</div>
+	
+	<?php get_sidebar(); ?>
+
+	<div id="primary" class="site-content eleven-columns">
 		<div id="content" role="main">
 		<?php if ( have_posts() ) : ?>
 
@@ -62,5 +68,5 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

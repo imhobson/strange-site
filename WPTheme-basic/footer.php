@@ -35,7 +35,7 @@
 	================================================== -->
 	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-	<script src="<?php echo get_bloginfo('stylesheet_directory');?>js/header.js" type="text/javascript" /></script>
+	<script src="<?php echo get_bloginfo('stylesheet_directory');?>/js/header.js" type="text/javascript" /></script>
 
 
 		
