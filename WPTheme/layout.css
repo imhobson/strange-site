@@ -1,21 +1,14 @@
-/*
-* Skeleton V1.1
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 8/17/2011
-*/
 
-/* Table of Content
+/* Table of Contents
 ==================================================
 	#Site Styles
 	#Page Styles
 	#Media Queries
 	#Font-Face */
-
+	
 /* #Site Styles
 ================================================== */
+
 
 h1 { line-height: 40px; }
 h2 { text-transform: uppercase; }
@@ -37,13 +30,14 @@ h4 { font-size: 24px; margin-bottom: 5px; }
 	padding: 20px;	
 }
 
-.tpic { padding-bottom: 7px; text-align: center; }
 
+
+.tpic { padding-bottom: 7px; }
 
 /* #Header
 ================================================== */
 
-#header { 
+header { 
 	z-index:999;
 	width: 100%;
 	position:relative;
@@ -78,11 +72,10 @@ h4 { font-size: 24px; margin-bottom: 5px; }
 	background: url(../images/kaiju.png) no-repeat;
 }
 	
-#header #logo { 
-	margin: 0 auto 0 auto;
+header #logo { 
+	margin: 0;
 	position: relative;
-	top: 176px;
-	width:280px;
+	top: 176px;  
 }
 
 img.center { 
@@ -90,25 +83,25 @@ img.center {
 	margin-left: auto; margin-right: auto; 
 }
 
-#header nav { 
+header nav { 
 	font-family: 'Amatic SC', serif; 
 	position:relative;
 	top:2px;
 }
 
-#header #nav_left { 
+header #nav_left { 
 	float:left; 
 }
-#header #nav_right { 
+header #nav_right { 
 	float:right; 
 }
 
-#header nav li { 
+header nav li { 
 	display:block; 
 	float:left; 
 }
 
-#header nav a { 
+header nav a { 
 	color:#fff; 
 	text-decoration:none; 
 	display: block;
@@ -126,58 +119,58 @@ img.center {
 }
 
 /* Fix position of contact icon */
-#header nav li.contact img {
+header nav li.contact img {
 	position:relative;
 	top:-5px;
 }
 
-#header nav a:visited { color: #e8e8e8; }
-#header nav a.active { color: #8dc63f; }
-#header nav a:hover { color: #8dc63f; }
-#header nav li:first-child { background:none; }
-#header nav li:first-child a { margin-left: 0px; }
-#header nav li:last-child a { margin-right: 0px; }
+header nav a:visited { color: #e8e8e8; }
+header nav a.active { color: #8dc63f; }
+header nav a:hover { color: #8dc63f; }
+header nav li:first-child { background:none; }
+header nav li:first-child a { margin-left: 0px; }
+header nav li:last-child a { margin-right: 0px; }
 
 
 /* Fixed header only for larger screens */
 @media only screen and (min-width: 767px) {
 
-	#header.fixed{
+	header.fixed{
 		position:fixed;
 		top: -320px;
 	}
 
-	#header.fixed #logo { 
+	header.fixed #logo { 
 		top:197px;
 	}
 
-	#header.fixed #logo img{ 
+	header.fixed #logo img{ 
 		height:125px; 
 	}
 
-	#header.fixed nav{
+	header.fixed nav{
 		top:72px;
 	}
 
-	#header.fixed nav a{
+	header.fixed nav a{
 		height: 40px; 
 		font-size: 30px;
 		line-height:40px;
 	}
 
-	#header.fixed #nav_left { 
+	header.fixed #nav_left { 
 		left:80px; 
 	}
 
-	#header.fixed #nav_right { 
+	header.fixed #nav_right { 
 		right:80px; 
 	}
 
-	#header.fixed nav li.contact img {
+	header.fixed nav li.contact img {
 		top:0px;
 	}
 
-	#header.fixed nav li.home img {
+	header.fixed nav li.home img {
 		position:relative;
 		top:2px;
 	}
@@ -186,34 +179,34 @@ img.center {
 /* Make the nav smaller for screens smaller than 960px */
 @media only screen and (max-width: 959px) {
 	
-	#header #logo img{ 
+	header #logo img{ 
 		height:125px; 
 	}
 
-	#header nav{
+	header nav{
 		top:51px;
 	}
 
-	#header nav a{
+	header nav a{
 		height: 40px; 
 		font-size: 30px;
 		line-height:40px;
 	}
 
-	#header.fixed #nav_left { 
+	header.fixed #nav_left { 
 		left:0px; 
 	}
 
-	#header.fixed #nav_right { 
+	header.fixed #nav_right { 
 		right:0px; 
 	}
 
 
-	#header nav li.contact img {
+	header nav li.contact img {
 		top:0px;
 	}
 
-	#header nav li.home img {
+	header nav li.home img {
 		position:relative;
 		top:2px;
 	}
@@ -237,7 +230,7 @@ img.center {
 	position:relative;
 	bottom:0px;
 	font: 15px/28px;
-	margin-top:40px;
+	margin-top:20px;
 	padding-top: 15px;
 	text-align: center;
 }
@@ -280,7 +273,9 @@ img.center {
 
 @media only screen and (max-width: 960px) {
 	.footer .eggs { 
-		top:0px;
+		width:160px;
+		margin-left:-80px;
+		top:25px;
 	}
 	.footer .social{
 		top:120px;
@@ -288,20 +283,18 @@ img.center {
 }
 
 @media only screen and (max-width: 767px) {
-	.footer{
-		padding-top:55px;
-	}
 	.footer .eggs { 
-		top:0px;
+		width:100px;
+		margin-left:-50px;
+		top:20px;
 	}
 }
 
 @media only screen and (max-width: 480px) {
-	.footer{
-		padding-top:75px;
-	}
 	.footer .eggs { 
-		top:0px;
+		width:70px;
+		margin-left:-35px;
+		top:10px;
 	}
 }
 
@@ -317,12 +310,7 @@ img.center {
 /* #Home Page
 ================================================== */
 
-.homeheading { 
-	margin-top: 20px; font-size: 49px; 
-	text-align: center; 
-	line-height: 45px; 
-	color: #f4e1c2; 
-}
+.homeheading { margin-top: 20px; font-size: 49px; text-align: center; line-height: 45px; color: #FFFFFF; }
 
 .homepic { padding-top: 5px;
 			padding-bottom: 10px; }
@@ -338,35 +326,6 @@ img.center {
 
 .blogheading h2 { font-size: 40px; text-align: left; line-height: 45px; color: #2d2d2d; }
 
-/* #Team Page
-================================================== */
-
-.social-buttons{
-	margin:5px 0px 0px;
-	padding:0px;
-	text-align:center;
-}
-
-.social-buttons li{
-	display:inline;
-	font-size:24px;
-	padding-left:5px;
-}
-
-.social-buttons li.first{
-	padding-left:0px;
-}
-
-.social-buttons a{
-	text-decoration: none;
-	color:white;
-}
-.social-buttons a:hover{color:white; opacity:.8;};
-.social-buttons a:active{color:white; opacity:.8;};
-.social-buttons a:visited{color:white;};
-
-
-
 /* #Contact Page
 ================================================== */
 
@@ -376,23 +335,17 @@ img.center {
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (min-width: 959px) {
-
-	#header #logo{
-		position:fixed;
-		width:500px;
-	}
-	
-	.hidefull { 
-		display: none; 
-	}
-	
+	@media only screen and (min-width: 959px) {
+	.hidefull { display: none; }
 	.iphonelandscape { display: none; }
+	.sponsors {
+		list-style: none;
+		margin: auto;
+	}
 }
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
-
 	.slidertop { 
 		margin-top: -21px; 
 	}
@@ -400,11 +353,19 @@ img.center {
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-
-	.hidefull { 
-		display: none; 
-	}
 	
+	.hidefull { display: none; }
+	.sponsors {
+		list-style: none;
+		width: 650px;
+		margin: auto;
+		margin-left: 150px;
+	}
+
+	.prevsponsors { 
+		margin-left: 35px; 
+	}
+
 	.iphonelandscape { 
 		display: none; 
 	}
@@ -442,3 +403,41 @@ img.center {
 	    font-weight: normal;
 	    font-style: normal; }
 */
+
+
+
+
+/* Layout Shortcodes */
+.full-width {width:960px; height:auto; overflow:hidden}
+
+.one_half { width: 48%; }
+.one_third { width: 30.66%; }
+.two_thirds { width: 65.33%; }
+.one_fourth { width: 22%; }
+.three_fourths { width: 74%; }
+.one_fifth { width: 16.8%; }
+.two_fifth { width: 37.6%; }
+.three_fifth { width: 58.4%; }
+.four_fifth { width: 67.2%; }
+.one_sixth { width: 13.33%; }
+.five_sixth { width: 82.67%; }
+
+.one_half,
+.one_third,
+.two_thirds,
+.three_fourths,
+.one_fourth,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth,
+.one_sixth,
+.five_sixth {
+	position: relative;
+	margin-right: 4%;
+	margin-bottom: 20px;
+	float: left;
+}
+
+
+.last {margin-right:0 !important;}
