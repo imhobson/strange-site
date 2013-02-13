@@ -125,7 +125,7 @@
 	<!-- END MOBILE NAV -->
 
 	<div class="sixteen columns">
-		<h1 class="homeheading big-bottom"><strong>The Team</strong></h1>
+		<h1 class="homeheading big-bottom">The Team</h1>
 	</div>
 
 	<div class="three columns">
@@ -146,7 +146,7 @@
   <div class="five columns">
 	  <div class="darkbox">
       <h2 class="half-bottom">Michael Hobson</h2>
-        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Curabitur blandit tempus porttitor ut id elit.</p>
+        <p>Mike is our designer. He has 11 years of web, print & app design experience, and loves to solve a good UX problem. Destroyer of to-do lists. Harbinger of functional design. Networking addict as one third of <a target="_blank" href="http://www.3-beards.com/">3beards</a>.</p>
 		</div>
   </div>
          
@@ -165,9 +165,9 @@
 			<div class="darkbox">
         	<h2 class="half-bottom">Mat Munro</h2>
         	
-        	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Curabitur blandit tempus porttitor ut id elit.</p>
+        	<p>Mat is a Principle at Strange and is responsible for its direction. He combines business development and client partnerships with research and own IP creation. His expertise spans ideation, business, technology, and film.  He likes swing dance and D&D.</p>
 			</div>
-         </div>
+       </div>
          
          <div class="three columns add-bottom">
 			<div class="greenbox tpic">        	
@@ -185,11 +185,11 @@
 			<div class="darkbox">
         	<h2 class="half-bottom">Philip Cole</h2>
         	
-        	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Curabitur blandit tempus porttitor ut id elit.</p>
+        	<p>Phil is our Principle Front-End Developer. He has a keen sense of design and over 6 years of coding experience building desktop, web and mobile apps. He studied electronics and loves to play with his Arduino, he hopes to help us build our very own Strange™ robot.</p>
 			</div>
          </div>
          
-         <div class="three columns add-bottom">
+     <div class="three columns add-bottom">
 			<div class="greenbox tpic">        	
         	<p><img src="images/03.jpg" class="scale-with-grid" alt="Juan Uys"></p>
         		<ul class="social-buttons clearfix">
@@ -201,11 +201,18 @@
 			</div>
          </div>
          
-         <div class="five columns add-bottom">
+     <div class="five columns add-bottom">
 			<div class="darkbox">
         	<h2 class="half-bottom">Juan Uys</h2>
-        	
-        	<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Curabitur blandit tempus porttitor ut id elit.</p>
+        	<p id="juan-bio">
+        	</p>
+        	<script>
+        	var api = "http://opyate.com/bio.php";
+        	var render = function(data) {
+        		$('#juan-bio').html(data.bio);
+        	};
+        	$.get(api,function(data) { render(data); }).error(function() { draw("<span style='color:red;'>Error</span>"); });
+        	</script>
 			</div>
          </div>
        

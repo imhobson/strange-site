@@ -37,7 +37,7 @@ h4 { font-size: 24px; margin-bottom: 5px; }
 /* #Header
 ================================================== */
 
-header { 
+#header { 
 	z-index:999;
 	width: 100%;
 	position:relative;
@@ -72,7 +72,7 @@ header {
 	background: url(../images/kaiju.png) no-repeat;
 }
 	
-header #logo { 
+#logo { 
 	margin: 0;
 	position: relative;
 	top: 176px;  
@@ -83,31 +83,29 @@ img.center {
 	margin-left: auto; margin-right: auto; 
 }
 
-header nav { 
+#header nav { 
 	font-family: 'Amatic SC', serif; 
 	position:relative;
 	top:2px;
 }
 
-header #nav_left { 
+#nav_left { 
 	float:left; 
 }
-header #nav_right { 
+#nav_right { 
 	float:right; 
 }
 
-header nav li { 
+#header nav li { 
 	display:block; 
 	float:left; 
 }
 
-header nav a { 
+#header nav a { 
 	color:#fff; 
 	text-decoration:none; 
 	display: block;
-	font-size: 40px;
-	height: 50px; 
-	line-height:50px;
+	font-size:72px;
 	padding: 5px 17px 5px 17px;
 	margin: 0px 5px 0px 5px; 
 	background: rgba(0, 0, 0, 0.6); 
@@ -310,7 +308,14 @@ header nav li:last-child a { margin-right: 0px; }
 /* #Home Page
 ================================================== */
 
-.homeheading { margin-top: 20px; font-size: 49px; text-align: center; line-height: 45px; color: #FFFFFF; }
+.homeheading { 
+	margin-top: 20px; 
+	margin-bottom: 30px;
+	font-size: 49px; 
+	text-align: center; 
+	line-height: 45px; 
+	color: #FFFFFF; 
+}
 
 .homepic { padding-top: 5px;
 			padding-bottom: 10px; }

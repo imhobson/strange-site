@@ -17,7 +17,10 @@
 /* #Site Styles
 ================================================== */
 
-h1 { line-height: 40px; }
+h1 { 
+	line-height: 40px;
+	font-weight: 400; 
+}
 h2 { text-transform: uppercase; }
 h4 { font-size: 24px; margin-bottom: 5px; }
 
@@ -106,17 +109,20 @@ img.center {
 #header nav li { 
 	display:block; 
 	float:left; 
+	height:60px;
+	margin: 0px 5px 0px 5px; 
 }
 
 #header nav a { 
 	color:#fff; 
 	text-decoration:none; 
-	display: block;
 	font-size: 40px;
 	height: 50px; 
-	line-height:50px;
-	padding: 5px 17px 5px 17px;
-	margin: 0px 5px 0px 5px; 
+	line-height: 49px;
+	display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+	padding: 0px 17px 0px 17px;
 	background: rgba(0, 0, 0, 0.6); 
 	-webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
@@ -162,7 +168,6 @@ img.center {
 	#header.fixed nav a{
 		height: 40px; 
 		font-size: 30px;
-		line-height:40px;
 	}
 
 	#header.fixed #nav_left { 
@@ -197,7 +202,6 @@ img.center {
 	#header nav a{
 		height: 40px; 
 		font-size: 30px;
-		line-height:40px;
 	}
 
 	#header.fixed #nav_left { 
@@ -208,7 +212,6 @@ img.center {
 		right:0px; 
 	}
 
-
 	#header nav li.contact img {
 		top:0px;
 	}
@@ -218,6 +221,16 @@ img.center {
 		top:2px;
 	}
 }
+
+.remove-bottom { margin-bottom: 0 !important; }
+.big-bottom { margin-bottom: 30px !important; }
+.add-bottom { margin-bottom: 20px !important; }
+.half-bottom { margin-bottom: 10px !important; }
+.big-top { margin-top: 30px !important; }
+.add-top { margin-top: 20px !important; }
+.half-top { margin-top: 10px !important; }
+
+
 
 /* Mobile nav */
 .mininav { font-family: 'Quando', serif, "Georgia", "Times New Roman", Arial, sans-serif; font-size: 15px; list-style-type:none; margin:0; padding:0; margin-top: 20px; }
@@ -322,6 +335,7 @@ img.center {
 	text-align: center; 
 	line-height: 45px; 
 	color: #f4e1c2; 
+	margin-bottom: 30px;
 }
 
 .homepic { padding-top: 5px;
@@ -330,7 +344,6 @@ img.center {
 .homeintro { font-size: 20px; text-align: center; margin-bottom: 30px; margin-top: -10px; }
 
 .homename {
-	font-weight: 600;
 	font-size: 15px; 
 	line-height: 23px; }
 	
@@ -375,20 +388,6 @@ img.center {
 /* #Media Queries
 ================================================== */
 
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (min-width: 959px) {
-
-	#header #logo{
-		position:fixed;
-		width:500px;
-	}
-	
-	.hidefull { 
-		display: none; 
-	}
-	
-	.iphonelandscape { display: none; }
-}
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
@@ -399,7 +398,7 @@ img.center {
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 9000px) {
 
 	.hidefull { 
 		display: none; 

@@ -55,7 +55,8 @@
 		background:url(../images/bg01.jpg) repeat top center; 
 		font: 16px/21px 'Source Sans Pro', sans-serif;
 		color: #FFFFFF;
-		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		font-smooth:always;
+		-webkit-font-smoothing: antialiased;
 		-webkit-text-size-adjust: 100%;
  }
 
@@ -84,7 +85,7 @@
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
 	em { font-style: italic; }
-	strong { font-weight: bold; }
+	strong { font-weight:; }
 	small { font-size: 80%; }
 
 /*	Blockquotes  */
