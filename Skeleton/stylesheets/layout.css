@@ -220,11 +220,11 @@ img.center {
 }
 
 /* Mobile nav */
-.mininav { font-family: 'Quando', serif, "Georgia", "Times New Roman", Arial, sans-serif; font-size: 15px; list-style-type:none; margin:0; padding:0; margin-top: 20px; }
-.mininav li { background: #c99763; width: 49%; float: left; margin-right: 2%; text-align: center; margin-bottom: 5px; }
+.mininav { font-family: 'Amatic SC', cursive; font-size: 30px; list-style-type:none; margin:0; padding:0; margin-top: 20px; }
+.mininav li { background: #39b54a; width: 49%; float: left; margin-right: 2%; text-align: center; margin-bottom: 5px; -moz-border-radius: 15px; border-radius: 15px; }
 .mininav a { padding: 15px; padding-top: 20px; color: #000; text-decoration: none; display: block; }
-.mininav a.active { background: #60370c; color: #FFF; }
-.mininav a:hover { background: #93622e; color: #1c1c1c; }
+.mininav a.active { background: #056839; color: #FFF; -moz-border-radius: 15px; border-radius: 15px; }
+.mininav a:hover { background: #8dc63f; color: #1c1c1c; -moz-border-radius: 15px; border-radius: 15px; }
 .mininav .fixnav { margin-right: 0px;}
 
 .heademail { float: right; margin-top: 20px; color: #FFF; font-weight: 600; }
