@@ -81,9 +81,9 @@
 		<div class="eight columns">
 			<nav id="nav_left" class="nomobile">
 			<ul>
-				<li class="home"><a href="index.html" alt="Home"><img src="<?php echo get_bloginfo('stylesheet_directory');?>/images/nav-home.png" alt="Home"></a></li>
-				<li><a href="aboutus.html" alt="About Us">About Us</a></li>
-				<li><a href="theteam.html" alt="The Team">The Team</a></li>
+				<li class="home"><a href="http://www.meetstrange.com/index.html" alt="Home"><img src="<?php echo get_bloginfo('stylesheet_directory');?>/images/nav-home.png" alt="Home"></a></li>
+				<li><a href="http://www.meetstrange.com/aboutus.html" alt="About Us">About Us</a></li>
+				<li><a href="http://www.meetstrange.com/theteam.html" alt="The Team">The Team</a></li>
 			</ul>
 			</nav>
 		</div>
@@ -91,9 +91,9 @@
 		<div class="eight columns">		
 			<nav id="nav_right" class="nomobile">
 				<ul>
-					<li><a href="/blog" alt="Our Work">Our Work</a></li>				
-					<li><a href="/blog" class="active" alt="Blog">The Blog</a></li>
-					<li class="contact"><a href="contact.html" alt="Contact"><img src="<?php echo get_bloginfo('stylesheet_directory');?>/images/nav-mail.png" alt="Contact"></a></li>
+					<li><a href="http://www.meetstrange.com/blog/category/our-work/" alt="Our Work">Our Work</a></li>				
+					<li><a href="http://www.meetstrange.com/blog" class="active" alt="Blog">The Blog</a></li>
+					<li class="contact"><a href="http://www.meetstrange.com/contact.html" alt="Contact"><img src="<?php echo get_bloginfo('stylesheet_directory');?>/images/nav-mail.png" alt="Contact"></a></li>
 				</ul>
 			</nav>
 		</div>	
@@ -110,12 +110,12 @@
 	<div class="sixteen columns add-bottom">
 		
 				<ul class="mininav">
-					<li><a href="index.html" alt="Home">Home</a></li>
-					<li class="fixnav"><a href="aboutus.html" alt="About Us">About Us</a></li>
-					<li><a href="theteam.html" alt="The Team">The Team</a></li>
-					<li class="fixnav"><a href="/blog" alt="Our Work">Our Work</a></li>
-					<li><a href="/blog" class="active"  alt="The Blog">The Blog</a></li>				
-					<li class="fixnav"><a href="contact.html" alt="Contact">Contact</a></li>
+					<li><a href="http://www.meetstrange.com/index.html" alt="Home">Home</a></li>
+					<li class="fixnav"><a href="http://www.meetstrange.com/aboutus.html" alt="About Us">About Us</a></li>
+					<li><a href="http://www.meetstrange.com/theteam.html" alt="The Team">The Team</a></li>
+					<li class="fixnav"><a href="http://www.meetstrange.com/blog/category/our-work/" alt="Our Work">Our Work</a></li>
+					<li><a href="http://www.meetstrange.com/blog" class="active"  alt="The Blog">The Blog</a></li>				
+					<li class="fixnav"><a href="http://www.meetstrange.com/contact.html" alt="Contact">Contact</a></li>
 				</ul>
 		
 	</div>
