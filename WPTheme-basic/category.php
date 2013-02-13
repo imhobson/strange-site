@@ -13,7 +13,14 @@
 
 get_header(); ?>
 
-	<section id="primary" class="site-content">
+<div class="sixteen columns">
+			<h1 class="homeheading big-bottom"><strong>The Blog</strong></h1>
+	</div>
+	
+	<?php get_sidebar(); ?>
+
+
+	<section id="primary" class="site-content eleven-columns">
 		<div id="content" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -47,5 +54,4 @@ get_header(); ?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
