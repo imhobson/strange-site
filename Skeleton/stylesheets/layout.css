@@ -31,16 +31,22 @@ h4 { font-size: 24px; margin-bottom: 5px; }
 .largearrow a {  text-decoration: none; }
 
 .darkbox {
+	background-color: #231f20;
 	background-color: rgba(0, 0, 0, 0.3);
 	padding: 20px;	
 }
 
 .greenbox {
+	background-color: rgb(117, 202, 82);
 	background-color: rgba(117, 202, 82, 0.5);
 	padding: 20px;	
 }
 
 .tpic { padding-bottom: 7px; text-align: center; }
+
+.ie6 .hidefull,.ie7 .hidefull, .ie8 .hidefull {
+	display: none;
+}
 
 
 /* #Header
@@ -123,6 +129,7 @@ img.center {
   vertical-align: middle;
   text-align: center;
 	padding: 0px 17px 0px 17px;
+	background: #231f20;
 	background: rgba(0, 0, 0, 0.6); 
 	-webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
@@ -374,10 +381,17 @@ img.center {
 	text-decoration: none;
 	color:white;
 }
-.social-buttons a:hover{color:white; opacity:.8;};
-.social-buttons a:active{color:white; opacity:.8;};
-.social-buttons a:visited{color:white;};
+.social-buttons a:hover{
+	color:white; 
+	opacity:.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 
+};
+.social-buttons a:active{
+	color:white; opacity:.8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+};
+.social-buttons a:visited{color:white;};
 
 
 /* #Contact Page

@@ -165,7 +165,7 @@
 			<div class="darkbox">
         	<h2 class="half-bottom">Mat Munro</h2>
         	
-        	<p>Mat is a Principle at Strange and is responsible for its direction. He combines business development and client partnerships with research and own IP creation. His expertise spans ideation, business, technology, and film.  He likes swing dance and D&D.</p>
+        	<p>Mat is a Principle at Strange and is responsible for its direction. He combines business development and product ownership with research and own IP creation. His skills span ideation, business, technology, film and Scrum.  He likes swing dance and D&D.</p>
 			</div>
        </div>
          
@@ -206,13 +206,6 @@
         	<h2 class="half-bottom">Juan Uys</h2>
         	<p id="juan-bio">
         	</p>
-        	<script>
-        	var api = "http://opyate.com/bio.php";
-        	var render = function(data) {
-        		$('#juan-bio').html(data.bio);
-        	};
-        	$.get(api,function(data) { render(data); }).error(function() { draw("<span style='color:red;'>Error</span>"); });
-        	</script>
 			</div>
          </div>
        
@@ -287,6 +280,14 @@
   })();
 
 </script>	
+
+      	<script>
+        	var api = "http://opyate.com/bio.php";
+        	var render = function(data) {
+        		$('#juan-bio').html(data.bio);
+        	};
+        	$.get(api,function(data) { render(data); }).error(function() { draw("<span style='color:red;'>Error</span>"); });
+        	</script>
 
 
 <!-- End Document
