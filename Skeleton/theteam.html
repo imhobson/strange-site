@@ -280,14 +280,17 @@
   })();
 
 </script>	
-
-      	<script>
-        	var api = "http://opyate.com/bio.php";
-        	var render = function(data) {
-        		$('#juan-bio').html(data.bio);
-        	};
-        	$.get(api,function(data) { render(data); }).error(function() { draw("<span style='color:red;'>Error</span>"); });
-        	</script>
+<script>
+$(document).ready(function(){ 
+	var api = "http://opyate.com/bio.php";
+	var render = function(data) {
+		$('#juan-bio').html(data.bio);
+	};
+  $.get(api,function(data) { 
+  	render(data); 
+  });
+});
+</script>
 
 
 <!-- End Document
