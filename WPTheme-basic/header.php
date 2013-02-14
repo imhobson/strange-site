@@ -33,9 +33,9 @@
 	<!-- CSS
   ================================================== -->
   	<link href='http://fonts.googleapis.com/css?family=Amatic+SC|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="<?php echo get_bloginfo('stylesheet_directory');?>/stylesheets/base.css">
-	<link rel="stylesheet" href="<?php echo get_bloginfo('stylesheet_directory');?>/stylesheets/skeleton.css">
-	<link rel="stylesheet" href="<?php echo get_bloginfo('stylesheet_directory');?>/stylesheets/layout.css">
+	<link rel="stylesheet" href="http://www.meetstrange.com/stylesheets/base.css">
+	<link rel="stylesheet" href="http://www.meetstrange.com/stylesheets/skeleton.css">
+	<link rel="stylesheet" href="http://www.meetstrange.com/stylesheets/layout.css">
 
 	
 	<!--[if lt IE 9]>
