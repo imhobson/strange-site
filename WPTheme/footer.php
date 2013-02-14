@@ -45,7 +45,12 @@
 
 </script>	
 
-
+<script>
+if(location.href.indexOf('work') != -1){
+	$('a.active').removeClass('active');
+	$('a.work').addClass('active');
+}
+</script>
 <!-- End Document
 ================================================== -->
 </body>
