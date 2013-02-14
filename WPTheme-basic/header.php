@@ -74,7 +74,7 @@
 	<header id="header">
 	<div class="container">
 	<div id="logo">
-		<a href="index.html" title="Strange Home" alt="Home">
+		<a href="http://www.meetstrange.com" title="Strange Home" alt="Home">
 		<img src="<?php echo get_bloginfo('stylesheet_directory');?>/images/logo.png" class="scale-with-grid center" alt="Strange logo"></a>
 	</div>
 	
