@@ -58,6 +58,9 @@ if(location.href.indexOf('work') != -1){
 	$('a.active').removeClass('active');
 	$('a.work').addClass('active');
 }
+$(function() {
+   window.scrollTo(0,300);
+});
 </script>
 
 
