@@ -37,12 +37,12 @@
 	<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 	<script src="<?php echo get_bloginfo('stylesheet_directory');?>/js/header.js" type="text/javascript" /></script>
 
-
 		
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-37834457-1']);
+  _gaq.push(['_setDomainName', 'meetstrange.com']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -51,7 +51,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>	
+</script>
 
 <script>
 if(location.href.indexOf('work') != -1){
